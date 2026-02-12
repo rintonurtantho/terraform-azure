@@ -1,21 +1,14 @@
-variable "resource_group_name" {
-  description = "Name of the resource group"
-  type        = string
-}
-
 variable "location" {
-  description = "Azure region"
-  type        = string
-  default     = "Southeast Asia"
+  default = "Southeast Asia"
 }
 
 variable "admin_username" {
+  description = "Username untuk login VM"
   type        = string
-  description = "VM admin username"
 }
 
 variable "admin_password" {
+  description = "Password untuk login VM"
   type        = string
   sensitive   = true
-  description = "VM admin password"
 }
